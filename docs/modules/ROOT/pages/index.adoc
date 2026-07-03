@@ -19,9 +19,8 @@ Passionate about Java, Spring Boot, architecture, agile delivery, and talent dev
 === Engineering Team Lead — Ezypay
 [.exp-period]#2024 – Present#
 
-Responsible for recruitment, talent retention, and talent growth within the team.
-Remove impediments blocking team members and work closely with the Product team
-for feature delivery. Provide mentoring to software engineers to ensure they
+Removing impediments blocking team members and working closely with the Product team
+for feature delivery. Providing mentoring to software engineers to ensure they
 remain relevant in the market.
 
 _Recruitment, Talent Development, Java, Spring Boot, Solution Architecture, Project Management_
