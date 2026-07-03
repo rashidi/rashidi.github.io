@@ -47,6 +47,65 @@
     <article class="doc{{#if page.attributes.role}} {{page.attributes.role}}{{/if}}">
       {{{page.contents}}}
     </article>
+
+    {{#if page.attributes.role}}
+    <aside class="info-rail" aria-label="At a glance summary">
+      <section class="rail-block">
+        <h2 class="rail-heading">At a Glance</h2>
+        <ul class="stat-list">
+          <li><span class="stat-num">18<span class="stat-plus">+</span></span><span class="stat-label">Years of Experience</span></li>
+          <li><span class="stat-num">6</span><span class="stat-label">Companies</span></li>
+          <li><span class="stat-num">10<span class="stat-plus">+</span></span><span class="stat-label">Years Leading Teams</span></li>
+        </ul>
+      </section>
+
+      <section class="rail-block">
+        <h2 class="rail-heading">Core Skills</h2>
+        <ul class="skill-bars">
+          <li>
+            <div class="skill-row"><span class="skill-name">Java &amp; Spring Boot</span><span class="skill-pct">95%</span></div>
+            <div class="skill-track"><span class="skill-fill" style="width:95%"></span></div>
+          </li>
+          <li>
+            <div class="skill-row"><span class="skill-name">Solution Architecture</span><span class="skill-pct">90%</span></div>
+            <div class="skill-track"><span class="skill-fill" style="width:90%"></span></div>
+          </li>
+          <li>
+            <div class="skill-row"><span class="skill-name">Team Leadership</span><span class="skill-pct">90%</span></div>
+            <div class="skill-track"><span class="skill-fill" style="width:90%"></span></div>
+          </li>
+          <li>
+            <div class="skill-row"><span class="skill-name">Agile Delivery</span><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><span class="skill-fill" style="width:85%"></span></div>
+          </li>
+          <li>
+            <div class="skill-row"><span class="skill-name">Talent Development</span><span class="skill-pct">85%</span></div>
+            <div class="skill-track"><span class="skill-fill" style="width:85%"></span></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="rail-block">
+        <h2 class="rail-heading">Toolbox</h2>
+        <div class="toolbox-tags">
+          <span class="tb-tag">Spring Boot</span>
+          <span class="tb-tag">MongoDB</span>
+          <span class="tb-tag">Elasticsearch</span>
+          <span class="tb-tag">MySQL</span>
+          <span class="tb-tag">GraphQL</span>
+          <span class="tb-tag">Google Cloud</span>
+          <span class="tb-tag">Angular</span>
+          <span class="tb-tag">React</span>
+          <span class="tb-tag">Cucumber</span>
+          <span class="tb-tag">Git</span>
+          <span class="tb-tag">GitLab</span>
+          <span class="tb-tag">Jenkins</span>
+          <span class="tb-tag">Maven</span>
+          <span class="tb-tag">Gradle</span>
+        </div>
+      </section>
+    </aside>
+    {{/if}}
   </main>
 
 </div>
