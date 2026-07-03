@@ -1,6 +1,5 @@
-name: rashidi
+name: ROOT
 title: Rashidi Zin
 version: ~
-start_page: ROOT:index.adoc
 nav:
   - modules/ROOT/nav.adoc
