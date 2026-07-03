@@ -1,0 +1,95 @@
+= Rashidi Zin
+:page-role: resume
+:navtitle: Home
+
+[.lead]
+Engineering Team Lead
+
+Software Engineer since 2007, now serving as an Engineering Team Lead/Manager.
+Passionate about Java, Spring Boot, architecture, agile delivery, and talent development.
+
+== Contact
+
+* Email: mailto:rashidi@zin.my[rashidi@zin.my]
+* GitHub: https://github.com/rashidi[rashidi]
+* LinkedIn: https://www.linkedin.com/in/rashidizin[rashidizin]
+
+== Work Experience
+
+=== Engineering Team Lead — Ezypay
+[.exp-period]#2024 – Present#
+
+Responsible for recruitment, talent retention, and talent growth within the team.
+Remove impediments blocking team members and work closely with the Product team
+for feature delivery. Provide mentoring to software engineers to ensure they
+remain relevant in the market.
+
+_Recruitment, Talent Development, Java, Spring Boot, Solution Architecture, Project Management_
+
+=== Software Engineering Manager — GBG
+[.exp-period]#2023 – 2024#
+
+Responsible for recruitment, working closely with internal recruiters to grow
+the team. Bridged the gap between engineering and product to ensure smooth
+delivery, removed impediments blocking engineers, and coordinated collaboration
+between engineers and clients.
+
+_Recruitment, Engineering Management, Project Management, Talent Retention_
+
+=== Principal Software Engineer — GfK
+[.exp-period]#2022 – 2023#
+
+Led hiring efforts by working with internal and external recruiters to identify
+candidates and conducted interviews to build the new team. Responsible for the
+career growth and retention of team members. Collaborated with the Product team
+to clarify technical requirements and directions.
+
+_Java, Spring Boot, MongoDB, Elasticsearch, Recruitment, Talent Development, Talent Retention_
+
+=== Senior Software Engineer — GfK
+[.exp-period]#2016 – 2022#
+
+Drove technical direction for the team and worked closely with the Product Owner
+to resolve technical ambiguities and impediments. Collaborated with tech leads
+from other teams to ensure smooth application integrations. Promoted a
+test-first culture grounded in the Agile Testing Manifesto. Served as Chapter
+Lead for several team members, supporting their career growth and marking my
+entry into people management. Also participated in the hiring process by
+conducting candidate interviews. Promoted Scrum best practices across the team
+to improve agile delivery.
+
+_Java, Spring Boot, Angular, React, Cucumber, MySQL, MongoDB, GraphQL, Google Cloud Platform, Git, GitLab, Apache Maven, Gradle_
+
+=== Analyst Programmer — GfK
+[.exp-period]#2014 – 2016#
+
+Developed features based on requirements from the Product Owner and followed
+technical directions from the Technical Architect.
+
+_Java, Spring Boot, Oracle Database, Jenkins, Git, AngularJS, Gradle_
+
+=== Software Engineer — TimWe
+[.exp-period]#2013 – 2014#
+
+Developed Liferay portlets based on clients' requirements, guided team members,
+and provided assistance during UAT, deployment, and production.
+
+_Liferay, jQuery, Git, Jenkins_
+
+=== Software Engineer — OnApp
+[.exp-period]#2009 – 2013#
+
+Delivered features for a CDN application to provide better speed in
+delivering web content. Worked in a Scrum environment, collaborating closely
+with the team to ship reliable, performant solutions.
+
+_Java, Spring Framework, Hibernate, Symfony, Apache Maven, UNIX, Git, Jenkins, Scrum_
+
+=== Software Engineer — iMocha
+[.exp-period]#2007 – 2008#
+
+Developed features based on requirements provided by Business Analysts.
+Provided support during User Acceptance Testing (UAT) and delivered
+production support to ensure system stability.
+
+_Glassfish, Unix, Apache Struts, Apache Maven, jQuery_
