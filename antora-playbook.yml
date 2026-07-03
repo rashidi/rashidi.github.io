@@ -1,7 +1,7 @@
 site:
   title: Rashidi Zin
   url: https://rashidi.zin.my
-  start_page: rashidi::index.adoc
+  start_page: ROOT::index.adoc
 
 content:
   sources:
