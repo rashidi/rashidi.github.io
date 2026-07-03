@@ -36,7 +36,9 @@ jobs:
         run: npm ci
 
       - name: Build site with Antora
-        run: npm run build
+        run: |
+          npm run build
+          touch build/site/.nojekyll
 
       - name: Add CNAME
         run: cp CNAME build/site/CNAME
