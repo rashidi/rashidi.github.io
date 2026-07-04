@@ -15,8 +15,6 @@ My career in software engineering began in 2007. Over the years, I have progress
 === Active Passions
 [.exp-company]#AFK#
 
-When I am not architecting software, you will likely find me on the dance floor or in the gym. 
-
 * *Latin Dance:* I am a dedicated Latin dancer with a strong focus on Cuban Salsa (Casino) and Sensual Bachata. Exploring the complex rhythms, such as the clave, and mastering new choreography is one of my greatest creative outlets.
 * *Fitness:* I maintain a highly structured fitness regimen centered on weightlifting and compound movements. Tracking my performance helps me continually push my physical limits and supports my flexibility and strength as a dancer.
 
@@ -25,8 +23,6 @@ When I am not architecting software, you will likely find me on the dance floor 
 
 === The Unwind
 [.exp-company]#Downtime#
-
-Downtime is just as important as building and training. 
 
 * *Gaming:* I am an avid PlayStation 5 gamer, with a particular love for the fighting game genre—especially the Tekken franchise.
 * *Music & Audio:* High-fidelity audio is a priority for me. I rely on Tidal to get the absolute best sound quality, whether I am listening to Salsa, heavy metal, or anything with meaningful lyrics.
