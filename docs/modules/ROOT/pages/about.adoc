@@ -2,9 +2,9 @@
 :navtitle: About
 :page-description: About Rashidi Zin — Engineering Team Lead and Software Engineer.
 
-I am an Engineering Team Lead and Software Engineer with experience in the software industry since 2007. My career has spanned across multiple domains and roles, giving me a strong foundation in both technical delivery and people management.
+=== Professional Journey
 
-== Professional Journey
+I am an Engineering Team Lead and Software Engineer with experience in the software industry since 2007. My career has spanned across multiple domains and roles, giving me a strong foundation in both technical delivery and people management.
 
 Throughout my career, I have grown from a Software Engineer to an Engineering Team Lead. I have a proven track record of bridging the gap between product requirements and engineering execution.
 
@@ -14,11 +14,11 @@ My core areas of expertise include:
 * *Technical Architecture & Development*: Proficient in Java, Spring Boot, Solution Architecture, and scalable systems.
 * *Agile & Scrum Delivery*: Strong advocate for Agile best practices, fostering a test-first culture, and collaborating closely with Product teams to resolve technical ambiguities.
 
-== Core Skills
+=== Core Skills
 
 [.exp-tags]
 [.tag]#Engineering Management# [.tag]#Recruitment# [.tag]#Talent Development# [.tag]#Solution Architecture# [.tag]#Java# [.tag]#Spring Boot# [.tag]#Agile# [.tag]#Project Management#
 
-== Beyond the Code
+=== Beyond the Code
 
 When I'm not leading engineering teams or writing code, I enjoy unwinding with fighting games on the PlayStation, with a particular love for the Tekken franchise. I am also an avid Latin social dancer and can often be found enjoying a night of Salsa dancing.
