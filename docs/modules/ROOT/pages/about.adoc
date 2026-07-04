@@ -4,16 +4,19 @@
 
 Hello! I am an Engineering Team Lead who enjoys dancing Salsa.
 
-== The Professional Journey
+=== The Professional Journey
+
 My career in software engineering began in 2007. Over the years, I have progressed through roles as a Software Engineer, Senior Software Engineer, Principal Software Engineer, and Engineering Manager. My technical expertise heavily revolves around the Java and Spring ecosystems, focusing on building robust microservices and scalable system architectures. Beyond the code, I am deeply invested in talent development and mentoring, as I believe the strength of any engineering team lies in its people.
 
-== Active Passions
+=== Active Passions
+
 When I am not architecting software, you will likely find me on the dance floor or in the gym. 
 
 * *Latin Dance:* I am a dedicated Latin dancer with a strong focus on Cuban Salsa (Casino) and Sensual Bachata. Exploring the complex rhythms, such as the clave, and mastering new choreography is one of my greatest creative outlets.
 * *Fitness:* I maintain a highly structured fitness regimen centered on weightlifting and compound movements. Tracking my performance helps me continually push my physical limits and supports my flexibility and strength as a dancer.
 
-== The Unwind
+=== The Unwind
+
 Downtime is just as important as building and training. 
 
 * *Gaming:* I am an avid PlayStation 5 gamer, with a particular love for the fighting game genre—especially the Tekken franchise.
