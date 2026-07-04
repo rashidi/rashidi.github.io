@@ -13,7 +13,7 @@ My career in software engineering began in 2007. Over the years, I have progress
 [.tag]#Recruitment# [.tag]#Talent Development# [.tag]#Java# [.tag]#Spring Boot# [.tag]#Solution Architecture# [.tag]#Project Management#
 
 === Active Passions
-[.exp-company]#AFK#
+[.exp-company]#No Code#
 
 * *Latin Dance:* I am a dedicated Latin dancer with a strong focus on Cuban Salsa (Casino) and Sensual Bachata. Exploring the complex rhythms, such as the clave, and mastering new choreography is one of my greatest creative outlets.
 * *Fitness:* I maintain a highly structured fitness regimen centered on weightlifting and compound movements. Tracking my performance helps me continually push my physical limits and supports my flexibility and strength as a dancer.
@@ -29,4 +29,4 @@ My career in software engineering began in 2007. Over the years, I have progress
 * *Feline Companions:* I am a proud cat dad to two amazing cats, Grey and Linda (who is easily recognizable by her distinct ginger patches).
 
 [.exp-tags]
-[.tag]#Recruitment# [.tag]#Gaming# [.tag]#Music# [.tag]#Cats#
+[.tag]#Gaming# [.tag]#Music# [.tag]#Cats#
