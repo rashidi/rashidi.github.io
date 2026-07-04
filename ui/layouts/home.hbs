@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {{> head defaultPageTitle='Home'}}
+    <style>
+      /* Custom styles to center the content */
+      .home-layout {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: calc(100vh - 3.5rem); /* Accounts for the top navbar height */
+        text-align: center;
+        padding: 2rem;
+        width: 100%;
+        background-color: var(--body-background, #ffffff);
+      }
+      .home-layout img.avatar {
+        border-radius: 50%;
+        margin-bottom: 1.5rem;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      }
+      .home-layout p {
+        max-width: 600px;
+        line-height: 1.6;
+        font-size: 1.1rem;
+        margin-bottom: 1.5rem;
+      }
+      .home-layout .badges img {
+        margin: 0 0.5rem;
+      }
+      /* Hide the default Antora title since the intro acts as the focal point */
+      .home-layout h1 {
+        display: none; 
+      }
+    </style>
+  </head>
+  <body class="body">
+    <!-- Injects the standard Antora top navigation bar -->
+    {{> header}}
+    
+    <!-- Centers your profile content without injecting the left sidebar -->
+    <main class="home-layout">
+      {{{page.contents}}}
+    </main>
+
+    <!-- Injects standard footer and scripts for mobile menu functionality -->
+    {{> footer}}
+    {{> scripts}}
+  </body>
+</html>
