@@ -427,3 +427,22 @@ a { color: inherit; text-decoration: none; }
     margin-bottom: 8px;
   }
 }
+
+/* Add space above and below the entire list */
+.ulist ul {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem; /* Creates breathing room between the list and the tags below */
+  padding-left: 1.5rem;  /* Ensures bullets aren't hugging the left edge */
+}
+
+/* Style the individual bullet points */
+.ulist li {
+  margin-bottom: 1rem; /* This is the key fix: adds a gap between each bullet point */
+  line-height: 1.6;    /* Improves readability for multi-line paragraphs */
+  color: #4a4a4a;      /* Optional: slightly softening the text color can make dense text look less heavy */
+}
+
+/* Remove the margin from the very last bullet so the card's internal padding remains balanced */
+.ulist li:last-child {
+  margin-bottom: 0;
+}
