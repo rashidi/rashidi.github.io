@@ -1,6 +1,5 @@
 = About Me
 :navtitle: About
-:page-role: resume
 :page-description: About Rashidi Zin — Engineering Team Lead and Software Engineer.
 
 I am an Engineering Team Lead and Software Engineer with experience in the software industry since 2007. My career has spanned across multiple domains and roles, giving me a strong foundation in both technical delivery and people management.
