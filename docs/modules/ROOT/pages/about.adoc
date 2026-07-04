@@ -2,7 +2,7 @@
 :navtitle: About
 :page-description: About Rashidi Zin — Engineering Team Lead and Software Engineer.
 
-Hello! I am an Engineering Team Lead who enjoys dancing Salsa.
+== Hello! I am an Engineering Team Lead who enjoys dancing Salsa.
 
 === The Professional Journey
 [.exp-company]#Career#
