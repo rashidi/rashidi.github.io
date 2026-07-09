@@ -1,4 +1,6 @@
 = Rashidi Zin
+:pdf-theme: ./resume-theme.yml
+:pdf-fontsdir: M+;Iosevka;LiberationSans;NotoSans
 :navtitle: Home
 :page-role: resume
 :page-description: Rashidi Zin — Engineering Team Lead. Software Engineer since 2007.

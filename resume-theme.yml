@@ -1,0 +1,18 @@
+page:
+  size: A4
+  margins: [0.75in, 0.5in, 0.75in, 0.5in]
+base:
+  font_color: #2b2b2b
+  font_family: Helvetica
+  line_height_length: 14
+  font_size: 10.5
+heading:
+  font_color: #1a365d # Deep blue for clear structure
+  font_style: bold
+  h1_font_size: 22
+  h2_font_size: 14
+  h3_font_size: 11
+  h2_border_bottom_color: #e2e8f0
+  h2_border_bottom_width: 1
+link:
+  font_color: #3182ce
