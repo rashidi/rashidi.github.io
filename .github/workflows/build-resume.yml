@@ -35,6 +35,7 @@ jobs:
           puppeteer print \
             --format A4 \
             --background \
+            --args="--no-sandbox --disable-setuid-sandbox" \
             https://rashidi.zin.my/ ./resume.pdf
 
       - name: Verify Output File Presence
