@@ -20,23 +20,56 @@ jobs:
         with:
           node-version: '22'
 
-      # Chrome needs a few extra Linux libraries to render graphics correctly in Ubuntu
-      - name: Install System Dependencies for Chromium
+      # Install Antora and Puppeteer
+      - name: Install Dependencies
         run: |
-          sudo apt-get update
-          sudo apt-get install -y libgbm-dev
-          
-      - name: Install Puppeteer CLI
-        run: npm install -g puppeteer-cli
+          npm install -D @antora/cli @antora/site-generator-default puppeteer
 
-      # Captures your live site exactly as it is, preserving backgrounds
-      - name: Print Live Site to PDF
+      # Generate the static HTML using your default.hbs and index.adoc
+      - name: Build Antora Site
+        run: npx antora antora-playbook.yml
+
+      # Capture the local HTML file to PDF
+      - name: Generate PDF with Puppeteer
         run: |
-          puppeteer print \
-            --format A4 \
-            --background \
-            --args="--no-sandbox --disable-setuid-sandbox" \
-            https://rashidi.zin.my/ ./resume.pdf
+          cat << 'EOF' > generate.js
+          const puppeteer = require('puppeteer');
+          const path = require('path');
+
+          (async () => {
+            try {
+              const browser = await puppeteer.launch({
+                args: ['--no-sandbox', '--disable-setuid-sandbox']
+              });
+              const page = await browser.newPage();
+              
+              // Point directly to the HTML file Antora just generated
+              // Note: Adjust 'build/site/index.html' if your antora-playbook.yml outputs to a different directory
+              const filePath = `file://${path.join(__dirname, 'build/site/index.html')}`;
+              console.log(`Navigating to ${filePath}`);
+              
+              await page.goto(filePath, { waitUntil: 'networkidle0' });
+              
+              // CRITICAL: Emulate 'screen' media so standard print stylesheets 
+              // don't hide your side panel or navigation elements.
+              await page.emulateMediaType('screen');
+              
+              await page.pdf({
+                path: 'resume.pdf',
+                format: 'A4',
+                printBackground: true,
+                margin: { top: '0', bottom: '0', left: '0', right: '0' }
+              });
+              
+              await browser.close();
+              console.log('PDF generated successfully!');
+            } catch (error) {
+              console.error('Error generating PDF:', error);
+              process.exit(1);
+            }
+          })();
+          EOF
+          node generate.js
 
       - name: Verify Output File Presence
         run: |
