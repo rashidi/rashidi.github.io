@@ -3,8 +3,8 @@ name: Compile AsciiDoc Resume to PDF
 on:
   push:
     paths:
-      - 'index.adoc'
-      - 'resume-theme.yml'
+      - '/docs/modules/ROOT/pages/index.adoc'
+      - './github/workflows/resume-theme.yml'
   workflow_dispatch: # Allows manual trigger via GitHub UI
 
 jobs:
