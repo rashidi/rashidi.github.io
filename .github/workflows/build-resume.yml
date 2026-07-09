@@ -1,35 +1,83 @@
-name: Compile AsciiDoc Resume to PDF
+name: Generate Resume PDF
 
 on:
-  push:
-    paths:
-      - '/docs/modules/ROOT/pages/index.adoc'
-      - './github/workflows/resume-theme.yml'
-  workflow_dispatch: # Allows manual trigger via GitHub UI
+  workflow_run:
+    # Must match the name of the workflow that builds your artifact exactly
+    workflows: ["Deploy to GitHub Pages"] 
+    types:
+      - completed
+  workflow_dispatch:
 
 jobs:
-  build-pdf:
+  build-and-pdf:
     runs-on: ubuntu-latest
+    # Prevents PDF generation if the Antora build failed
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name == 'workflow_dispatch' }}
 
     steps:
-      - name: Checkout Source Code
-        uses: actions/checkout@v4
-
-      - name: Compile PDF via Asciidoctor Docker Container
-        uses: docker://asciidoctor/docker-asciidoctor:latest
+      - name: Download Pages Artifact
+        uses: actions/download-artifact@v8
         with:
-          args: asciidoctor-pdf -a pdf-theme=./resume-theme.yml index.adoc
-
-      - name: Verify Output File Presence
+          name: github-pages
+          # Links the download directly to the run that just finished
+          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          
+      - name: Extract HTML Site
         run: |
-          if [ ! -f index.pdf ]; then
-            echo "Error: Output index.pdf was not successfully generated."
-            exit 1
-          fi
-
-      - name: Upload PDF as Workflow Artifact
-        uses: actions/artifacts/upload@v4
+          mkdir -p site-build
+          tar -xvf artifact.tar -C site-build
+          
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
         with:
-          name: resume-pdf-artifact
-          path: index.pdf
-          retention-days: 360
+          node-version: 'latest'
+
+      - name: Install Puppeteer
+        run: npm install puppeteer
+
+      - name: Generate PDF with Puppeteer
+        run: |
+          cat << 'EOF' > generate.js
+          const puppeteer = require('puppeteer');
+          const path = require('path');
+
+          (async () => {
+            try {
+              const browser = await puppeteer.launch({
+                args: ['--no-sandbox', '--disable-setuid-sandbox']
+              });
+              const page = await browser.newPage();
+              
+              // Point directly to the extracted index.html
+              const filePath = `file://${path.join(__dirname, 'site-build/index.html')}`;
+              console.log(`Navigating to ${filePath}`);
+              
+              await page.goto(filePath, { waitUntil: 'networkidle0' });
+              
+              // Emulate screen to preserve the side panel and standard web CSS
+              await page.emulateMediaType('screen');
+              
+              await page.pdf({
+                path: 'resume.pdf',
+                format: 'A4',
+                printBackground: true,
+                margin: { top: '0', bottom: '0', left: '0', right: '0' }
+              });
+              
+              await browser.close();
+              console.log('PDF generated successfully!');
+            } catch (error) {
+              console.error('Error generating PDF:', error);
+              process.exit(1);
+            }
+          })();
+          EOF
+          node generate.js
+
+      - name: Upload PDF Artifact
+        uses: actions/upload-artifact@v7
+        with:
+          name: resume-pdf
+          path: resume.pdf
+          retention-days: 90
