@@ -1,0 +1,35 @@
+name: Compile AsciiDoc Resume to PDF
+
+on:
+  push:
+    paths:
+      - 'index.adoc'
+      - 'resume-theme.yml'
+  workflow_dispatch: # Allows manual trigger via GitHub UI
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v4
+
+      - name: Compile PDF via Asciidoctor Docker Container
+        uses: docker://asciidoctor/docker-asciidoctor:latest
+        with:
+          args: asciidoctor-pdf -a pdf-theme=./resume-theme.yml index.adoc
+
+      - name: Verify Output File Presence
+        run: |
+          if [ ! -f index.pdf ]; then
+            echo "Error: Output index.pdf was not successfully generated."
+            exit 1
+          fi
+
+      - name: Upload PDF as Workflow Artifact
+        uses: actions/artifacts/upload@v4
+        with:
+          name: resume-pdf-artifact
+          path: index.pdf
+          retention-days: 360
