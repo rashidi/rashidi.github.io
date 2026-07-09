@@ -13,12 +13,17 @@ jobs:
 
     steps:
       - name: Checkout Source Code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '4.0' # Not needed with a .ruby-version, .tool-versions or mise.toml
+          bundler-cache: true # runs 'bundle install' and caches installed gems automatically
+        
       - name: Compile PDF via Asciidoctor Docker Container
         uses: docker://asciidoctor/docker-asciidoctor:latest
         with:
-          args: asciidoctor-pdf -a pdf-theme=./resume-theme.yml ./docs/modules/ROOT/pages/index.adoc
+          args: asciidoctor-pdf --trace -v -a pdf-theme=./resume-theme.yml ./docs/modules/ROOT/pages/index.adoc
 
       - name: Verify Output File Presence
         run: |
