@@ -20,18 +20,16 @@ jobs:
         with:
           node-version: '22'
 
-      # Install Asciidoctor Web PDF and its headless browser dependencies
-      - name: Install Asciidoctor Web PDF Engine
-        run: |
-          npm install -g @asciidoctor/core asciidoctor-pdf
+      - name: Install Puppeteer CLI
+        run: npm install -g puppeteer-cli
 
-      - name: Compile Document to HTML/PDF
+      # Captures your live site exactly as it is, preserving backgrounds
+      - name: Print Live Site to PDF
         run: |
-          asciidoctor-web-pdf \
-            -a stylesheet=./resume-web.css \
-            -B ./ \
-            ./docs/modules/ROOT/pages/index.adoc \
-            -o ./resume.pdf
+          puppeteer print \
+            --format A4 \
+            --background \
+            https://rashidi.zin.my/ ./resume.pdf
 
       - name: Verify Output File Presence
         run: |
