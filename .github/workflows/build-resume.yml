@@ -23,11 +23,11 @@ jobs:
       # Install Asciidoctor Web PDF and its headless browser dependencies
       - name: Install Asciidoctor Web PDF Engine
         run: |
-          npm install -g @asciidoctor/core asciidoctor-web-pdf
+          npm install -g @asciidoctor/core asciidoctor-pdf
 
       - name: Compile Document to HTML/PDF
         run: |
-          asciidoctor-web-pdf \
+          asciidoctor-pdf \
             -a stylesheet=./resume-web.css \
             -B ./ \
             ./docs/modules/ROOT/pages/index.adoc \
