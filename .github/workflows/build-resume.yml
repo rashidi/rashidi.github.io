@@ -8,7 +8,7 @@ on:
   workflow_dispatch: # Allows manual trigger via GitHub UI
 
 jobs:
-  build-pdf:
+  build-resume:
     runs-on: ubuntu-latest
 
     steps:
@@ -27,7 +27,7 @@ jobs:
 
       - name: Compile Document to HTML/PDF
         run: |
-          asciidoctor-pdf \
+          asciidoctor-web-pdf \
             -a stylesheet=./resume-web.css \
             -B ./ \
             ./docs/modules/ROOT/pages/index.adoc \
