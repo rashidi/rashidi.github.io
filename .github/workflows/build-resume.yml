@@ -55,8 +55,11 @@ jobs:
               
               await page.goto(filePath, { waitUntil: 'networkidle0' });
               
-              // Emulate screen to preserve the side panel and standard web CSS
+              // Emulate screen to preserve the standard web CSS
               await page.emulateMediaType('screen');
+
+              // Work experience is collapsible on the site; expand every role for the PDF
+              await page.evaluate(() => document.querySelectorAll('details').forEach(d => { d.open = true; }));
               
               await page.pdf({
                 path: 'resume.pdf',

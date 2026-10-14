@@ -5,11 +5,12 @@
 :page-role: resume
 :page-description: Rashidi Zin — Engineering Team Lead. Software Engineer since 2007.
 
-== Work Experience
+// Each role is a collapsible block; only the current role starts expanded (%open).
+== Experience
 
-=== Engineering Team Lead
-[.exp-company]#Ezypay# [.exp-period]#2024 – Present#
-
+[.job%collapsible%open]
+.[.when]#2024 – Present# Engineering Team Lead [.at]#· Ezypay#
+====
 Responsible for recruitment, talent retention, and talent growth within the team.
 Remove impediments blocking team members and work closely with the Product team
 for feature delivery. Provide mentoring to software engineers to ensure they
@@ -17,10 +18,11 @@ remain relevant in the market.
 
 [.exp-tags]
 [.tag]#Recruitment# [.tag]#Talent Development# [.tag]#Java# [.tag]#Spring Boot# [.tag]#Solution Architecture# [.tag]#Project Management#
+====
 
-=== Software Engineering Manager
-[.exp-company]#GBG# [.exp-period]#2023 – 2024#
-
+[.job%collapsible]
+.[.when]#2023 – 2024# Software Engineering Manager [.at]#· GBG#
+====
 Responsible for recruitment, working closely with internal recruiters to grow
 the team. Bridged the gap between engineering and product to ensure smooth
 delivery, removed impediments blocking engineers, and coordinated collaboration
@@ -28,21 +30,24 @@ between engineers and clients.
 
 [.exp-tags]
 [.tag]#Recruitment# [.tag]#Engineering Management# [.tag]#Project Management# [.tag]#Talent Retention#
+====
 
-=== Principal Software Engineer
-[.exp-company]#GfK# [.exp-period]#2022 – 2023#
-
+[.job%collapsible]
+.[.when]#2014 – 2023# Principal Software Engineer [.at]#· GfK# [.extra]#+ 2 earlier roles#
+====
+[.steps]
+* [.title]#Principal Software Engineer# [.yrs]#2022 – 2023#
++
 Led hiring efforts by working with internal and external recruiters to identify
 candidates and conducted interviews to build the new team. Responsible for the
 career growth and retention of team members. Collaborated with the Product team
 to clarify technical requirements and directions.
-
++
 [.exp-tags]
 [.tag]#Java# [.tag]#Spring Boot# [.tag]#MongoDB# [.tag]#Elasticsearch# [.tag]#Recruitment# [.tag]#Talent Development# [.tag]#Talent Retention#
 
-=== Senior Software Engineer
-[.exp-company]#GfK# [.exp-period]#2016 – 2022#
-
+* [.title]#Senior Software Engineer# [.yrs]#2016 – 2022#
++
 Drove technical direction for the team and worked closely with the Product Owner
 to resolve technical ambiguities and impediments. Collaborated with tech leads
 from other teams to ensure smooth application integrations. Promoted a
@@ -51,44 +56,47 @@ Lead for several team members, supporting their career growth and marking my
 entry into people management. Also participated in the hiring process by
 conducting candidate interviews. Promoted Scrum best practices across the team
 to improve agile delivery.
-
++
 [.exp-tags]
 [.tag]#Java# [.tag]#Spring Boot# [.tag]#Angular# [.tag]#React# [.tag]#Cucumber# [.tag]#MySQL# [.tag]#MongoDB# [.tag]#GraphQL# [.tag]#Google Cloud Platform# [.tag]#Git# [.tag]#GitLab# [.tag]#Apache Maven# [.tag]#Gradle#
 
-=== Analyst Programmer
-[.exp-company]#GfK# [.exp-period]#2014 – 2016#
-
+* [.title]#Analyst Programmer# [.yrs]#2014 – 2016#
++
 Developed features based on requirements from the Product Owner and followed
 technical directions from the Technical Architect.
-
++
 [.exp-tags]
 [.tag]#Java# [.tag]#Spring Boot# [.tag]#Oracle Database# [.tag]#Jenkins# [.tag]#Git# [.tag]#AngularJS# [.tag]#Gradle#
+====
 
-=== Software Engineer
-[.exp-company]#TimWe# [.exp-period]#2013 – 2014#
-
+[.job%collapsible]
+.[.when]#2013 – 2014# Software Engineer [.at]#· TimWe#
+====
 Developed Liferay portlets based on clients' requirements, guided team members,
 and provided assistance during UAT, deployment, and production.
 
 [.exp-tags]
 [.tag]#Liferay# [.tag]#jQuery# [.tag]#Git# [.tag]#Jenkins#
+====
 
-=== Software Engineer
-[.exp-company]#OnApp# [.exp-period]#2009 – 2013#
-
+[.job%collapsible]
+.[.when]#2009 – 2013# Software Engineer [.at]#· OnApp#
+====
 Delivered features for a CDN application to provide better speed in
 delivering web content. Worked in a Scrum environment, collaborating closely
 with the team to ship reliable, performant solutions.
 
 [.exp-tags]
 [.tag]#Java# [.tag]#Spring Framework# [.tag]#Hibernate# [.tag]#Symfony# [.tag]#Apache Maven# [.tag]#UNIX# [.tag]#Git# [.tag]#Jenkins# [.tag]#Scrum#
+====
 
-=== Software Engineer
-[.exp-company]#iMocha# [.exp-period]#2007 – 2008#
-
+[.job%collapsible]
+.[.when]#2007 – 2008# Software Engineer [.at]#· iMocha#
+====
 Developed features based on requirements provided by Business Analysts.
 Provided support during User Acceptance Testing (UAT) and delivered
 production support to ensure system stability.
 
 [.exp-tags]
 [.tag]#Glassfish# [.tag]#Unix# [.tag]#Apache Struts# [.tag]#Apache Maven# [.tag]#jQuery#
+====
