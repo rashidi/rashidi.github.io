@@ -7,7 +7,7 @@
     "build": "antora --fetch antora-playbook.yml"
   },
   "devDependencies": {
-    "@antora/cli": "3.2.2",
+    "@antora/cli": "3.2.3",
     "@antora/site-generator": "3.2.2"
   }
 }
